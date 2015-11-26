@@ -34,4 +34,4 @@ Once CocoaPods are installed, you'll have to open the project using the new work
 #### Storyboards
 Our project leverages several View Controllers shown below. The initial view controller is the entry to our application and is of type `MMDrawerController`. The Drawer View Controller is our drawer (with menus Home and Settings). Then we have two view controllers (First and Second) that represent the Home and Settings screens.
 
-![Storyboard](https://github.com/vcollak/VladDrawer/images/storyboard.png)
+![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/storyboard.png)
