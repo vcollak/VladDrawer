@@ -83,6 +83,9 @@ Make sure you define a Storyboard ID for the second (Settings) controller
 
 Both the First (Home) and Second (Settings) View Controllers use BaseViewController as a parent. This allows us to handle common things like gestures and menu bar taps.
 
+##### BaseViewController.h
+
+
 ```
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
@@ -91,7 +94,7 @@ Both the First (Home) and Second (Settings) View Controllers use BaseViewControl
 @end
 ```
 
-##### Base Controller
+##### BaseViewController.m
 
 
 ```
@@ -119,7 +122,7 @@ Both the First (Home) and Second (Settings) View Controllers use BaseViewControl
 }
 ```
 
-> Vlad: I could have created an outlet to menuPressed in each (Forst and Second) View Controllers, but chose to crate the outlet to BaseViewController. This way we only have one method that handles opening and closing for the drawer.
+> Vlad: I could have created an outlet to menuPressed in each (First and Second) View Controllers, but chose to create the outlet to BaseViewController. This way we only have one method that handles opening and closing for the drawer.
 
 #### DrawerViewController - Buttons / links to navigate to First and Second Controllers
 
@@ -129,6 +132,7 @@ This is is the actual drawer:
 
 DrawerViewController imports MMDrawerController header files. Then in navigates to appropriate controllers using the segue ID we defined under a navigational controller for both the FirstViewController and SecondViewController.
 
+##### DrawerViewController.m
 
 ```
 #import <MMDrawerController.h>
@@ -181,7 +185,7 @@ DrawerViewController imports MMDrawerController header files. Then in navigates 
 #### FirstViewController & SecondViewController
 Both FirstViewController & SecondViewController and clean and simple. They merely inherit the BaseViewController. Nothing else needs to be done apart from creating outlets for their Menu buttons to BaseViewController's menuPressed method.
 
-FirstViewController.h
+##### FirstViewController.h
 
 ```
 #import <UIKit/UIKit.h>
@@ -192,7 +196,7 @@ FirstViewController.h
 @end
 ```
 
-FirstViewController.m
+##### FirstViewController.m
 ```
 #import "FirstViewController.h"
 
@@ -215,3 +219,6 @@ FirstViewController.m
 
 @end
 ```
+
+## Summary
+This is all that's required for the drawer to work. Overall I think this is pretty clean implementation that should work for most people.
