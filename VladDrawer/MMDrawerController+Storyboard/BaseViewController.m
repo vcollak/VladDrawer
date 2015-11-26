@@ -30,7 +30,7 @@
     self.mm_drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
 }
 
-/** User tapped on teh menu */
+/** User tapped on the menu */
 - (IBAction)menuPressed:(id)sender {
     
     //toggle  (open or close the drawer
