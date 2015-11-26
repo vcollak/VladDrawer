@@ -14,6 +14,8 @@
 		DA361C0F1C06922000221722 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA361C0E1C06922000221722 /* FirstViewController.m */; };
 		DA361C121C06945A00221722 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA361C111C06945A00221722 /* SecondViewController.m */; };
 		DA361C151C069A8900221722 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA361C141C069A8900221722 /* BaseViewController.m */; };
+		DA361C2C1C07852100221722 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DA361C2B1C07852100221722 /* README.md */; };
+		DA361C2E1C0785E000221722 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA361C2D1C0785E000221722 /* LICENSE */; };
 		DA763B561C060FF8001FDB84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA763B551C060FF8001FDB84 /* main.m */; };
 		DA763B591C060FF8001FDB84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA763B581C060FF8001FDB84 /* AppDelegate.m */; };
 		DA763B5F1C060FF8001FDB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA763B5D1C060FF8001FDB84 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		DA361C111C06945A00221722 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DA361C131C069A8900221722 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = "MMDrawerController+Storyboard/BaseViewController.h"; sourceTree = "<group>"; };
 		DA361C141C069A8900221722 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = "MMDrawerController+Storyboard/BaseViewController.m"; sourceTree = "<group>"; };
+		DA361C2B1C07852100221722 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA361C2D1C0785E000221722 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA763B511C060FF8001FDB84 /* VladDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VladDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA763B551C060FF8001FDB84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA763B571C060FF8001FDB84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		DA763B481C060FF8001FDB84 = {
 			isa = PBXGroup;
 			children = (
+				DA361C2D1C0785E000221722 /* LICENSE */,
+				DA361C2B1C07852100221722 /* README.md */,
 				DA763B531C060FF8001FDB84 /* VladDrawer */,
 				DA763B521C060FF8001FDB84 /* Products */,
 				E9EAA9C5CF9D7AC2CD6C8533 /* Pods */,
@@ -198,6 +204,7 @@
 				DA763B611C060FF8001FDB84 /* Assets.xcassets in Resources */,
 				DA361C081C06909400221722 /* LICENSE in Resources */,
 				DA763B5F1C060FF8001FDB84 /* Main.storyboard in Resources */,
+				DA361C2E1C0785E000221722 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 				DA763B591C060FF8001FDB84 /* AppDelegate.m in Sources */,
 				DA361C0C1C0691E700221722 /* DrawerViewController.m in Sources */,
 				DA361C151C069A8900221722 /* BaseViewController.m in Sources */,
+				DA361C2C1C07852100221722 /* README.md in Sources */,
 				DA763B561C060FF8001FDB84 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

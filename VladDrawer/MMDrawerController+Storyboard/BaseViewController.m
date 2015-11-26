@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Enables user to swipe right to open the drawer
     self.mm_drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModePanningCenterView;
    
 }
@@ -25,7 +26,16 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    //Enables user to swipe left to close the drawer
     self.mm_drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
+}
+
+/** User tapped on teh menu */
+- (IBAction)menuPressed:(id)sender {
+    
+    //toggle  (open or close the drawer
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    
 }
 
 

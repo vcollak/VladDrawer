@@ -29,33 +29,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
+/** User tapped the Home button on the Drawer */
 - (IBAction)homeTapped:(id)sender {
     
     NSString *changingViewControllerIdentifier = @"FirstViewController";
-    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:changingViewControllerIdentifier];
-    if (viewController) {
-        [self.mm_drawerController setCenterViewController:viewController withCloseAnimation:YES completion:nil];
-    }
-}
+    [self drawerNavigate:changingViewControllerIdentifier];}
 
+/** User tapped the Settings button on the Drawer */
 - (IBAction)settingsTapped:(id)sender {
     
     NSString *changingViewControllerIdentifier = @"SecondViewController";
-    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:changingViewControllerIdentifier];
+    [self drawerNavigate:changingViewControllerIdentifier];
+}
+
+/** Navigate to the appropriate view controller. Make sure you pass the appropriate Storyboard ID to this. */
+- (void) drawerNavigate: (NSString *) viewControllerId{
+    
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:viewControllerId];
     if (viewController) {
         [self.mm_drawerController setCenterViewController:viewController withCloseAnimation:YES completion:nil];
     }
+    
 }
+
+
+
 
 
 @end

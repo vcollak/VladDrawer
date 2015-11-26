@@ -27,7 +27,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417" y="-1578"/>
+            <point key="canvasLocation" x="-765" y="-890"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="w92-cj-ejW">
@@ -59,14 +59,14 @@
                     <navigationItem key="navigationItem" id="bKg-If-e4L">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="UOo-ei-Fbb">
                             <connections>
-                                <action selector="menuPressed:" destination="jFM-Ps-it5" id="n5U-gk-ebh"/>
+                                <action selector="menuPressed:" destination="jFM-Ps-it5" id="UdW-lr-ZUE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7p-0T-TKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="-721"/>
+            <point key="canvasLocation" x="753" y="-1037"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="kld-9o-5wm">
@@ -98,14 +98,14 @@
                     <navigationItem key="navigationItem" id="hnz-fS-ZB5">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="rL6-93-New">
                             <connections>
-                                <action selector="menuPressed:" destination="EPv-Xk-Zz3" id="MJh-bY-eAF"/>
+                                <action selector="menuPressed:" destination="EPv-Xk-Zz3" id="DQV-O0-LuJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTP-AI-jGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="-7"/>
+            <point key="canvasLocation" x="753" y="-369"/>
         </scene>
         <!--Drawer View Controller-->
         <scene sceneID="Vmt-l0-wkt">
@@ -148,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CU5-EQ-zvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="-1578"/>
+            <point key="canvasLocation" x="-1" y="-1698"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3gP-PM-wde">
@@ -167,7 +167,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOe-mi-9YI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417" y="-721"/>
+            <point key="canvasLocation" x="5" y="-1043"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mBQ-Pc-COA">
@@ -186,7 +186,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chC-IC-KfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417" y="-7"/>
+            <point key="canvasLocation" x="5" y="-369"/>
         </scene>
     </scenes>
 </document>
