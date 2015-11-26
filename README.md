@@ -1,15 +1,16 @@
 # VladDrawer
 
-I was looking at several drawer (sidebar) implementation. The leading component for sidebar seems to be MMDrawerController. I found several implementations of it and thought the Hamburger implementation by macbaszii (https://github.com/macbaszii/Hamburger) was the most elegant.
+I was looking at several drawer (sidebar) implementations for Objective C. The leading component for sidebar seems to be MMDrawerController. I found several implementations of it and thought the  [Hamburger implementation by macbaszii](https://github.com/macbaszii/Hamburger) was the most elegant.
 
-This project is based on it, but provides some explanations and instructions. The user interface looks like this:
+This project is based on it, but provides some explanations and instructions. The user interface is very basic on purpose and looks like this:
 
 ![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/drawer.png)
 
 ## Configuration and Setup
 
 ### CocoaPods
-The drawer component we are using (MMDrawerController) is available with CocoaPods. To install it:
+The drawer component we are using
+([MMDrawerController](https://github.com/mutualmobile/MMDrawerController)) is available with CocoaPods. To install it:
 
 1. If you don't already have CocpaPods use this getting started guide: https://guides.cocoapods.org/using/getting-started.html
 
@@ -28,13 +29,17 @@ There are several things to know to get the drawer working:
 3. Storyboards
 4. BaseViewController - Gestures and Bar buttons  
 5. DrawerViewController - Buttons / links to navigate to First and Second Controllers
-6. FirstViewController - Home controller
-7. SecondViewController - Settings controller
+6. FirstViewController & SecondViewController (Home & Settings controllers)
+
+
+![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/project_files.png)
 
 
 #### Opening the project
 
 Once CocoaPods are installed, you'll have to open the project using the new workspace file that's created. This is because the Pods are created in a separate project.
+
+![Workspace](https://github.com/vcollak/VladDrawer/blob/master/images/workspace.png)
 
 #### MMDrawerController+Storyboard
 This is a Storyboard segue that defined left, center and right segues. We are only using left and center in this project. Left segue represents the a segue to the drawer. Center segue represents a segue to the center controller such as our FistViewController (Home) and SecondViewController (Settings).
@@ -43,6 +48,8 @@ Make sure you import this extension in your project. There is nothing else that 
 
 There is also a Pod for this under CocoaPods, but at the time of writing the Pod uses an older version of the MMDrawerController and not the 0.5.7 version we are using now.
 
+
+![MMDrawerController_Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/MMDrawerController_Storyboard.png)
 
 
 #### Storyboards
@@ -56,7 +63,7 @@ Make sure you define a Storyboard ID for the drawer controller
 
 ![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/drawer_storyboard_settings.png)
 
-Make sure you give the segue a class and an identifier
+Make sure you give it the segue a class and an identifier
 
 ![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/drawer_segue_settings.png)
 
@@ -67,14 +74,14 @@ Make sure you define a Storyboard ID for the first (Home) controller
 ![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/first_vc_storyboard_settings.png)
 
 ##### Second Controller (Settings)
-Make sure you define a Storyboard ID for the first (Home) controller
+Make sure you define a Storyboard ID for the second (Settings) controller
 
 ![Storyboard](https://github.com/vcollak/VladDrawer/blob/master/images/second_vc_storyboard_settings.png)
 
 
 #### BaseViewController - Gestures and Bar buttons  
 
-Both the First (Home) and Second (Settings) View Controllers use BaseViewController as a parent. This allows us to handle comment things like gestures and menu taps.
+Both the First (Home) and Second (Settings) View Controllers use BaseViewController as a parent. This allows us to handle common things like gestures and menu bar taps.
 
 ```
 #import <UIKit/UIKit.h>
